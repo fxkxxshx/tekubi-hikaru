@@ -1,0 +1,25 @@
+---
+import { data } from '../assets/js/data'
+import Swiper from '../components/Swiper.astro'
+import Layout from '../layouts/Layout.astro'
+
+export function getStaticPaths() {
+    return data
+}
+
+const { group } = Astro.params
+const { title, color } = Astro.props
+---
+
+<Layout title={ `${title} | TEKUBI HIKARU` }>
+    <main class="main">
+        <h2 class="heading">{ title }</h2>
+        <Swiper color={ color } />
+    </main>
+</Layout>
+
+<style>
+    .heading {
+        display: none;
+    }
+</style>
