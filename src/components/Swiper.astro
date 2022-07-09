@@ -1,0 +1,18 @@
+---
+const { color } = Astro.props
+---
+
+<div class="swiper my-swiper">
+    <div class="swiper-wrapper my-swiper-wrapper">
+        { color.map(item => (
+            <div class="swiper-slide my-swiper-slide" style={`background-color: ${item}`}></div>
+        )) }
+    </div>
+</div>
+
+<style>
+    .my-swiper, .my-swiper-wrapper, .my-swiper-slide {
+        height: 100vh;
+        width: 100%;
+    }
+</style>
