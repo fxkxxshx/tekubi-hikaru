@@ -1,0 +1,46 @@
+:root {
+    --color-text: #ffffe3;
+    --color-bg: #000026;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color-bg);
+	color: var(--color-text);
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    font-feature-settings: 'palt';
+	font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+}
+
+a {
+	color: var(--color-text);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img,
+svg {
+	height: auto;
+	width: 100%;
+    vertical-align: bottom;
+}
